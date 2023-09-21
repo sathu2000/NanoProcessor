@@ -1,0 +1,558 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jul 19 21:25:26 2022
+# Process ID: 16972
+# Current directory: C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13736 C:\Users\DELL\Downloads\Nano_Processor\Nano_Processor\Nano_Processor\Nano_Processor.xpr
+# Log file: C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/vivado.log
+# Journal file: C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 976.094 ; gain = 235.895
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nano_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nano_TB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f3b0063a675f4c5a8885b9a8ed887bd8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nano_TB_behav xil_defaultlib.Nano_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nano_TB_behav -key {Behavioral:sim_1:Functional:Nano_TB} -tclbatch {Nano_TB.tcl} -view {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg
+WARNING: Simulation object /Nano_TB/UUT/InstructionDecoder0/instruction was not found in the design.
+WARNING: Simulation object /Nano_TB/UUT/InstructionDecoder0/reg1 was not found in the design.
+WARNING: Simulation object /Nano_TB/UUT/InstructionDecoder0/reg2 was not found in the design.
+WARNING: Simulation object /Nano_TB/UUT/InstructionDecoder0/data was not found in the design.
+source Nano_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nano_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1004.773 ; gain = 13.797
+export_ip_user_files -of_objects  [get_files C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nano_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nano_TB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f3b0063a675f4c5a8885b9a8ed887bd8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nano_TB_behav xil_defaultlib.Nano_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nano_TB_behav -key {Behavioral:sim_1:Functional:Nano_TB} -tclbatch {Nano_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Nano_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nano_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nano_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nano_TB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f3b0063a675f4c5a8885b9a8ed887bd8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nano_TB_behav xil_defaultlib.Nano_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nano_TB_behav -key {Behavioral:sim_1:Functional:Nano_TB} -tclbatch {Nano_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Nano_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nano_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/Nano_TB/UUT/Res}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/Nano_TB/UUT/Clk_in}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/Nano_TB/UUT/OvrFlw}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nano_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nano_TB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f3b0063a675f4c5a8885b9a8ed887bd8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nano_TB_behav xil_defaultlib.Nano_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nano_TB_behav -key {Behavioral:sim_1:Functional:Nano_TB} -tclbatch {Nano_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Nano_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nano_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/Nano_TB/UUT}} 
+save_wave_config {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg
+set_property xsim.view {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg} [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nano_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nano_TB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f3b0063a675f4c5a8885b9a8ed887bd8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nano_TB_behav xil_defaultlib.Nano_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nano_TB_behav -key {Behavioral:sim_1:Functional:Nano_TB} -tclbatch {Nano_TB.tcl} -view {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg
+source Nano_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nano_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+export_ip_user_files -of_objects  [get_files C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nano_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nano_TB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f3b0063a675f4c5a8885b9a8ed887bd8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nano_TB_behav xil_defaultlib.Nano_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nano_TB_behav -key {Behavioral:sim_1:Functional:Nano_TB} -tclbatch {Nano_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Nano_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nano_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nano_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nano_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.srcs/sources_1/new/Nano_Processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Nano_Processor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f3b0063a675f4c5a8885b9a8ed887bd8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nano_TB_behav xil_defaultlib.Nano_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clock [slow_clock_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_3 [adder_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_to_1 [mux_2_to_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2way_3bit [mux_2way_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramROM [programrom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF_EN [d_ff_en_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg_bank [reg_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_8_to_1 [mux_8_to_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_8way_4bit [mux_8way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2way_4bit [mux_2way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.AdderSubtractor [addersubtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.Seven_Segment [seven_segment_default]
+Compiling architecture behavioral of entity xil_defaultlib.Nano_Processor [nano_processor_default]
+Compiling architecture behavioral of entity xil_defaultlib.nano_tb
+Built simulation snapshot Nano_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nano_TB_behav -key {Behavioral:sim_1:Functional:Nano_TB} -tclbatch {Nano_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Nano_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nano_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+add_wave {{/Nano_TB/UUT/MUX_A}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/MUX_B}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/MUX_2_to_1_out}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/RCA_out}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/jmpFlag}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/addOrSub}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/loadSel}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/imValue}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/addressJMP}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/regSelmuxB}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/decoderVal}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/regSelmuxA}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/ROM_OUT}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/twoway_mux_out}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/RCA3_bit_Out}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/Nano_TB/UUT/PROGRAM_COUNTER_Out}} 
+save_wave_config {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg
+set_property xsim.view {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg} [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nano_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nano_TB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f3b0063a675f4c5a8885b9a8ed887bd8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nano_TB_behav xil_defaultlib.Nano_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nano_TB_behav -key {Behavioral:sim_1:Functional:Nano_TB} -tclbatch {Nano_TB.tcl} -view {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg
+source Nano_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nano_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+export_ip_user_files -of_objects  [get_files C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nano_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nano_TB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f3b0063a675f4c5a8885b9a8ed887bd8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nano_TB_behav xil_defaultlib.Nano_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nano_TB_behav -key {Behavioral:sim_1:Functional:Nano_TB} -tclbatch {Nano_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Nano_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nano_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_wave_config {Untitled 7}
+Untitled 7
+add_wave {{/Nano_TB/UUT}} 
+save_wave_config {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg
+set_property xsim.view {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg} [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nano_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nano_TB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f3b0063a675f4c5a8885b9a8ed887bd8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nano_TB_behav xil_defaultlib.Nano_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nano_TB_behav -key {Behavioral:sim_1:Functional:Nano_TB} -tclbatch {Nano_TB.tcl} -view {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg
+source Nano_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nano_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 19 21:40:29 2022...

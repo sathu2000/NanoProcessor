@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jul 26 11:14:32 2022
+# Process ID: 12396
+# Current directory: C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15872 C:\Users\DELL\Downloads\Nano_Processor\Nano_Processor\Nano_Processor\Nano_Processor.xpr
+# Log file: C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/vivado.log
+# Journal file: C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.xpr
+update_compile_order -fileset sources_1

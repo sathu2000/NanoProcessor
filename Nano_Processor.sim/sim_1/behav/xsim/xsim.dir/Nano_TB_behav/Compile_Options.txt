@@ -1,0 +1,1 @@
+-wto "f3b0063a675f4c5a8885b9a8ed887bd8" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Nano_TB_behav" "xil_defaultlib.Nano_TB" -log "elaborate.log" 

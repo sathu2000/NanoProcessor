@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jul 26 11:59:42 2022
+# Process ID: 3836
+# Current directory: C:/Users/DELL/Documents/Nano_Processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18880 C:\Users\DELL\Documents\Nano_Processor\Nano_Processor.xpr
+# Log file: C:/Users/DELL/Documents/Nano_Processor/vivado.log
+# Journal file: C:/Users/DELL/Documents/Nano_Processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/DELL/Documents/Nano_Processor/Nano_Processor.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/DELL/Documents/Nano_Processor/Nano_Processor.srcs/sim_1/imports/new/TB_Instruction_Decoder.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/DELL/Documents/Nano_Processor/Nano_Processor.srcs/sim_1/imports/new/TB_Instruction_Decoder.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -force -norecurse C:/kajaani/vivado/lab9_10/lab9_10.srcs/sim_1/new/TB_Instruction_Decoder.vhd
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/DELL/Documents/Nano_Processor/Nano_Processor.srcs/sim_1/imports/new/TB_Instruction_Decoder.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/DELL/Documents/Nano_Processor/Nano_Processor.srcs/sim_1/imports/new/TB_Instruction_Decoder.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/kajaani/vivado/lab9_10/lab9_10.srcs/sim_1/new/TB_Instruction_Decoder.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config C:/Users/DELL/Documents/Nano_Processor/Nano_TB_behav.wcfg
+source Nano_TB.tcl
+close_sim

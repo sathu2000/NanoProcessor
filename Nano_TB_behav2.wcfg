@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Nano_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Nano_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1521582734fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="112"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/Nano_TB/UUT/MUX_A" type="array">
+      <obj_property name="ElementShortName">MUX_A[3:0]</obj_property>
+      <obj_property name="ObjectShortName">MUX_A[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/MUX_B" type="array">
+      <obj_property name="ElementShortName">MUX_B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">MUX_B[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/MUX_2_to_1_out" type="array">
+      <obj_property name="ElementShortName">MUX_2_to_1_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">MUX_2_to_1_out[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/RCA_out" type="array">
+      <obj_property name="ElementShortName">RCA_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">RCA_out[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/jmpFlag" type="logic">
+      <obj_property name="ElementShortName">jmpFlag</obj_property>
+      <obj_property name="ObjectShortName">jmpFlag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/addOrSub" type="logic">
+      <obj_property name="ElementShortName">addOrSub</obj_property>
+      <obj_property name="ObjectShortName">addOrSub</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/loadSel" type="logic">
+      <obj_property name="ElementShortName">loadSel</obj_property>
+      <obj_property name="ObjectShortName">loadSel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/imValue" type="array">
+      <obj_property name="ElementShortName">imValue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">imValue[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/addressJMP" type="array">
+      <obj_property name="ElementShortName">addressJMP[2:0]</obj_property>
+      <obj_property name="ObjectShortName">addressJMP[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/regSelmuxB" type="array">
+      <obj_property name="ElementShortName">regSelmuxB[2:0]</obj_property>
+      <obj_property name="ObjectShortName">regSelmuxB[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/decoderVal" type="array">
+      <obj_property name="ElementShortName">decoderVal[2:0]</obj_property>
+      <obj_property name="ObjectShortName">decoderVal[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/regSelmuxA" type="array">
+      <obj_property name="ElementShortName">regSelmuxA[2:0]</obj_property>
+      <obj_property name="ObjectShortName">regSelmuxA[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/ROM_OUT" type="array">
+      <obj_property name="ElementShortName">ROM_OUT[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ROM_OUT[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/twoway_mux_out" type="array">
+      <obj_property name="ElementShortName">twoway_mux_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">twoway_mux_out[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/RCA3_bit_Out" type="array">
+      <obj_property name="ElementShortName">RCA3_bit_Out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">RCA3_bit_Out[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/PROGRAM_COUNTER_Out" type="array">
+      <obj_property name="ElementShortName">PROGRAM_COUNTER_Out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">PROGRAM_COUNTER_Out[2:0]</obj_property>
+   </wvobject>
+</wave_config>

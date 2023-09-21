@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Nano_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Nano_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="999996508fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000699fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="115"></NameColumnWidth>
+      <ValueColumnWidth column_width="59"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="41" />
+   <wvobject fp_name="/Nano_TB/Res" type="logic">
+      <obj_property name="ElementShortName">Res</obj_property>
+      <obj_property name="ObjectShortName">Res</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/OvrFlw" type="logic">
+      <obj_property name="ElementShortName">OvrFlw</obj_property>
+      <obj_property name="ObjectShortName">OvrFlw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/Zero" type="logic">
+      <obj_property name="ElementShortName">Zero</obj_property>
+      <obj_property name="ObjectShortName">Zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/minus_carry" type="logic">
+      <obj_property name="ElementShortName">minus_carry</obj_property>
+      <obj_property name="ObjectShortName">minus_carry</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/R7LED" type="array">
+      <obj_property name="ElementShortName">R7LED[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R7LED[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/sev_out" type="array">
+      <obj_property name="ElementShortName">sev_out[6:0]</obj_property>
+      <obj_property name="ObjectShortName">sev_out[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/Clk_in" type="logic">
+      <obj_property name="ElementShortName">Clk_in</obj_property>
+      <obj_property name="ObjectShortName">Clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/Res" type="logic">
+      <obj_property name="ElementShortName">Res</obj_property>
+      <obj_property name="ObjectShortName">Res</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/Clk_in" type="logic">
+      <obj_property name="ElementShortName">Clk_in</obj_property>
+      <obj_property name="ObjectShortName">Clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/OvrFlw" type="logic">
+      <obj_property name="ElementShortName">OvrFlw</obj_property>
+      <obj_property name="ObjectShortName">OvrFlw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/Zero" type="logic">
+      <obj_property name="ElementShortName">Zero</obj_property>
+      <obj_property name="ObjectShortName">Zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/R7LED" type="array">
+      <obj_property name="ElementShortName">R7LED[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R7LED[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/sev_out" type="array">
+      <obj_property name="ElementShortName">sev_out[6:0]</obj_property>
+      <obj_property name="ObjectShortName">sev_out[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/minus_carry" type="logic">
+      <obj_property name="ElementShortName">minus_carry</obj_property>
+      <obj_property name="ObjectShortName">minus_carry</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/slw_clk" type="logic">
+      <obj_property name="ElementShortName">slw_clk</obj_property>
+      <obj_property name="ObjectShortName">slw_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/OvrFlw0" type="logic">
+      <obj_property name="ElementShortName">OvrFlw0</obj_property>
+      <obj_property name="ObjectShortName">OvrFlw0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/PROGRAM_COUNTER_Out" type="array">
+      <obj_property name="ElementShortName">PROGRAM_COUNTER_Out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">PROGRAM_COUNTER_Out[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/RCA3_bit_Out" type="array">
+      <obj_property name="ElementShortName">RCA3_bit_Out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">RCA3_bit_Out[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/twoway_mux_out" type="array">
+      <obj_property name="ElementShortName">twoway_mux_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">twoway_mux_out[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/ROM_OUT" type="array">
+      <obj_property name="ElementShortName">ROM_OUT[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ROM_OUT[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/regSelmuxA" type="array">
+      <obj_property name="ElementShortName">regSelmuxA[2:0]</obj_property>
+      <obj_property name="ObjectShortName">regSelmuxA[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/decoderVal" type="array">
+      <obj_property name="ElementShortName">decoderVal[2:0]</obj_property>
+      <obj_property name="ObjectShortName">decoderVal[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/regSelmuxB" type="array">
+      <obj_property name="ElementShortName">regSelmuxB[2:0]</obj_property>
+      <obj_property name="ObjectShortName">regSelmuxB[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/addressJMP" type="array">
+      <obj_property name="ElementShortName">addressJMP[2:0]</obj_property>
+      <obj_property name="ObjectShortName">addressJMP[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/imValue" type="array">
+      <obj_property name="ElementShortName">imValue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">imValue[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/chk4jmp" type="array">
+      <obj_property name="ElementShortName">chk4jmp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">chk4jmp[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/loadSel" type="logic">
+      <obj_property name="ElementShortName">loadSel</obj_property>
+      <obj_property name="ObjectShortName">loadSel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/addOrSub" type="logic">
+      <obj_property name="ElementShortName">addOrSub</obj_property>
+      <obj_property name="ObjectShortName">addOrSub</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/jmpFlag" type="logic">
+      <obj_property name="ElementShortName">jmpFlag</obj_property>
+      <obj_property name="ObjectShortName">jmpFlag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/REGI_0" type="array">
+      <obj_property name="ElementShortName">REGI_0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">REGI_0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/REGI_1" type="array">
+      <obj_property name="ElementShortName">REGI_1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">REGI_1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/REGI_2" type="array">
+      <obj_property name="ElementShortName">REGI_2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">REGI_2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/REGI_3" type="array">
+      <obj_property name="ElementShortName">REGI_3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">REGI_3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/REGI_4" type="array">
+      <obj_property name="ElementShortName">REGI_4[3:0]</obj_property>
+      <obj_property name="ObjectShortName">REGI_4[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/REGI_5" type="array">
+      <obj_property name="ElementShortName">REGI_5[3:0]</obj_property>
+      <obj_property name="ObjectShortName">REGI_5[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/REGI_6" type="array">
+      <obj_property name="ElementShortName">REGI_6[3:0]</obj_property>
+      <obj_property name="ObjectShortName">REGI_6[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/REGI_7" type="array">
+      <obj_property name="ElementShortName">REGI_7[3:0]</obj_property>
+      <obj_property name="ObjectShortName">REGI_7[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/MUX_A" type="array">
+      <obj_property name="ElementShortName">MUX_A[3:0]</obj_property>
+      <obj_property name="ObjectShortName">MUX_A[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/MUX_B" type="array">
+      <obj_property name="ElementShortName">MUX_B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">MUX_B[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/MUX_2_to_1_out" type="array">
+      <obj_property name="ElementShortName">MUX_2_to_1_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">MUX_2_to_1_out[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Nano_TB/UUT/RCA_out" type="array">
+      <obj_property name="ElementShortName">RCA_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">RCA_out[3:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_1" LaunchDir="D:/Uni Lecturer Notes/Second Semester/Computer Organization and Digital Design/00.Projects/NanoProcessor/Nano_Processor/Nano_Processor/Nano_Processor.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

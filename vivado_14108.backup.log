@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jul 11 18:19:50 2022
+# Process ID: 14108
+# Current directory: D:/Uni Lecturer Notes/Second Semester/Computer Organization and Digital Design/00.Projects/NanoProcessor/11.Nano_Processor/Nano_Processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22100 D:\Uni Lecturer Notes\Second Semester\Computer Organization and Digital Design\00.Projects\NanoProcessor\11.Nano_Processor\Nano_Processor\Nano_Processor.xpr
+# Log file: D:/Uni Lecturer Notes/Second Semester/Computer Organization and Digital Design/00.Projects/NanoProcessor/11.Nano_Processor/Nano_Processor/vivado.log
+# Journal file: D:/Uni Lecturer Notes/Second Semester/Computer Organization and Digital Design/00.Projects/NanoProcessor/11.Nano_Processor/Nano_Processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Uni Lecturer Notes/Second Semester/Computer Organization and Digital Design/00.Projects/NanoProcessor/11.Nano_Processor/Nano_Processor/Nano_Processor.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Uni Lecturer Notes/Second Semester/Computer Organization and Digital Design/00.Projects/NanoProcessor/11.Nano_Processor/Nano_Processor'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 875.754 ; gain = 134.492
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jul 11 18:20:51 2022] Launched synth_1...
+Run output will be captured here: D:/Uni Lecturer Notes/Second Semester/Computer Organization and Digital Design/00.Projects/NanoProcessor/11.Nano_Processor/Nano_Processor/Nano_Processor.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jul 11 18:21:54 2022] Launched synth_1...
+Run output will be captured here: D:/Uni Lecturer Notes/Second Semester/Computer Organization and Digital Design/00.Projects/NanoProcessor/11.Nano_Processor/Nano_Processor/Nano_Processor.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 11 18:23:01 2022...

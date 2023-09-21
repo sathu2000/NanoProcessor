@@ -1,0 +1,104 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jul 19 21:25:26 2022
+# Process ID: 16972
+# Current directory: C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13736 C:\Users\DELL\Downloads\Nano_Processor\Nano_Processor\Nano_Processor\Nano_Processor.xpr
+# Log file: C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/vivado.log
+# Journal file: C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_Processor.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg
+source Nano_TB.tcl
+export_ip_user_files -of_objects  [get_files C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg
+close_sim
+launch_simulation
+source Nano_TB.tcl
+close_sim
+launch_simulation
+source Nano_TB.tcl
+current_wave_config {Untitled 2}
+add_wave {{/Nano_TB/UUT/Res}} 
+current_wave_config {Untitled 2}
+add_wave {{/Nano_TB/UUT/Clk_in}} 
+current_wave_config {Untitled 2}
+add_wave {{/Nano_TB/UUT/OvrFlw}} 
+close_sim
+launch_simulation
+source Nano_TB.tcl
+current_wave_config {Untitled 3}
+add_wave {{/Nano_TB/UUT}} 
+save_wave_config {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg
+set_property xsim.view {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg
+source Nano_TB.tcl
+export_ip_user_files -of_objects  [get_files C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg
+close_sim
+launch_simulation
+source Nano_TB.tcl
+close_sim
+launch_simulation
+source Nano_TB.tcl
+add_wave {{/Nano_TB/UUT/MUX_A}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/MUX_B}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/MUX_2_to_1_out}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/RCA_out}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/jmpFlag}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/addOrSub}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/loadSel}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/imValue}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/addressJMP}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/regSelmuxB}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/decoderVal}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/regSelmuxA}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/ROM_OUT}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/twoway_mux_out}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/RCA3_bit_Out}} 
+current_wave_config {Untitled 6}
+add_wave {{/Nano_TB/UUT/PROGRAM_COUNTER_Out}} 
+save_wave_config {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg
+set_property xsim.view {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg
+source Nano_TB.tcl
+export_ip_user_files -of_objects  [get_files C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg
+close_sim
+launch_simulation
+source Nano_TB.tcl
+current_wave_config {Untitled 7}
+add_wave {{/Nano_TB/UUT}} 
+save_wave_config {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg
+set_property xsim.view {C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav1.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav2.wcfg C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/DELL/Downloads/Nano_Processor/Nano_Processor/Nano_Processor/Nano_TB_behav.wcfg
+source Nano_TB.tcl
+close_sim
